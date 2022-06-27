@@ -31,7 +31,7 @@ function buscarFilme(idFilme){
 // } 
 }
 
-// function alterarStatusEmCartaz(idFilme, status){
+function alterarStatusEmCartaz(idFilme, status){
 //USAR O .FOREACH .MAP
 // function alteraStatus(codigoDoFilme){
 //     catalogo.map(
