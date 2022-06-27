@@ -1,0 +1,20 @@
+{
+"catalogo": [
+    {
+    "codigo":1,
+    "titulo": "Cleiton",
+    "duracao": "1h40",
+    "atores": ["Ximbinha da Silva", "Joelma Francisca", "Laurindo Amadeu"],
+    "anoDeLancamento": 2020,
+    "emCartaz": false
+},
+{
+    "codigo":2,
+    "titulo":"Xurumbinho",
+    "duracao": "1h22",
+    "atores": ["Amado Batista", "Chitaozinho Leitor", "Zezé Cantor"],
+    "anoDeLancamento": 2021,
+    "emCartaz": true
+}
+]
+}
