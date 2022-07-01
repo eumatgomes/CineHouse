@@ -15,32 +15,35 @@ const filme = {
     emCartaz: emCartaz
 }
 catalogo.filmes.push(filme)
+const json = json.stringify(catalogo)
+fs.writeFileSync('./database/catalogo.json')
 }
 //FUNÇÃO QUE VAI ADICIONAR O FILME NO ARQUIVO CATALOGO
 
-function buscarFilme(idFilme){
+function buscarFilme(){
 //USAR O .INDEXOF OU .FOREACH .MAP
-// function buscarFilmePeloCodigo(codigoDoFilme){
-//     catalogo.map(
-//         function (filme){
-//             if (filme.codigo == codigoDoFilme){
-//                 console.log(filme.titulo)
-//             } 
-//         }
-//     )
-// } 
+    for (let i=0; i<catalogo.filmes.lenght; i++){
+        catalogo.filmes[i].codigo === codigo ? console.log(catalogo.filmes[i]) : ''
+    }
 }
+
+const listarTodosOsFilmes = () => {
+    for (let i = 0; i < catalogo.filmes.lenght; i++){
+        return catalogo.filmes
+    }
+}
+
+let listarFilmesEmCartaz = catalogo.filmes.filter(function (obj){
+    //LISTAR FILMES EM CARTAZ
+    return obj.emCartaz == true;
+})
+
+
 
 function alterarStatusEmCartaz(idFilme, status){
 //USAR O .FOREACH .MAP
-// function alteraStatus(codigoDoFilme){
-//     catalogo.map(
-//         function (filme){
-//             if (filme.codigo == codigoDoFilme){
-//                 console.log(!filme.emCartaz)
-//             }
-//         }
-//     )
-// }
+    for (let i = 0; i < catalogo.filmes.lenght; i++){
+catalogo.filmes[i].codigo === codigo ? catalogo.filmes[i].emCartaz = !catalogo.filmes[i].emCartaz : ''
+    }
 }
-adicionarFilme()
+
