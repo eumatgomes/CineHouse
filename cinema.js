@@ -1,4 +1,4 @@
-var cinema = "Cineminha";
+let cinema = "Cineminha";
 //NOME DA LOJA
 let catalogo = require('./database/catalogo.json')
 const fs = require('fs')
